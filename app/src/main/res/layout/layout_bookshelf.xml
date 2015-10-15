@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   	android:background="@drawable/bookshelf_bg"
+	>
+	<RelativeLayout android:id="@+id/bookshelf_top"
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/addbook_top_bg"
+	    android:layout_alignParentTop="true"
+        >
+	    <Button android:id="@+id/bookshelf_add_book"
+       	    style="@style/button"
+		    android:background="@drawable/button_style"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp"
+		    android:text="@string/bookshelf_add_book"
+		/>
+       	<TextView 
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:text="@string/bookshelf_title"
+		    />
+	    <Button android:id="@+id/bookshelf_menu"
+       	    style="@style/button"
+		    android:background="@drawable/button_style"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:text="@string/bookshelf_menu"
+		/>
+	</RelativeLayout>
+	    
+    <ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/bookshelf_top"
+		>
+        <TableLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	    	android:id="@+id/bookshelf_table"
+			>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="app_name">光速阅读</string>
+    
+    <string name="dialog_tip_title">提示消息</string>
+    <string name="dialog_error_title">警告消息</string>
+
+    <string name="bookshelf_add_book">增加小说</string>
+    <string name="bookshelf_title">我的书柜</string>
+    <string name="bookshelf_menu">菜单</string>
+    <string name="bookshelf_import_books">导入小说</string>
+    <string name="bookshelf_book_error">读取图书错误</string>
+    
+    <string name="addbook_back">返回</string>
+    <string name="addbook_title">打开书籍</string>
+    <string name="addbook_menu">菜单</string>
+    <string name="addbook_directory">文件夹</string>
+    <string name="addbook_error">添加图书失败</string>
+    
+    <string name="readbook_init_error">载入小说失败</string>
+    <string name="readbook_read_outset">已经到达图书的最开始</string>
+    <string name="readbook_read_end">图书阅读完毕</string>
+    <string name="readbook_read_error">阅读中出现错误</string>
+    
+    <string name="page_menu_tools">工 具</string>
+    
+    <string name="page_menu_seach_last">上一个</string>
+    <string name="page_menu_seach_next">下一个</string>
+    <string name="page_seach_progress">正在查询，请稍后&#8230;</string>
+    <string name="page_seach_goback">返回查询开始位置</string>
+    <string name="page_seach_outset">向上没有查询内容</string>
+    <string name="page_seach_end">向下没有查询内容</string>
+    
+    <string name="page_menu_setting">设 置</string>
+    <string name="page_menu_bg_image">阅读主题</string>
+    <string name="page_menu_bg_color">背景色</string>
+    <string name="page_menu_font_setting">字体设置</string>
+    <string name="page_menu_font_color">字体颜色</string>
+    <string name="page_menu_fontsize">字体大小</string>
+    <string name="page_menu_linesize">间距大小</string>
+    <string name="page_roll_speed_unit">秒</string>
+    
+    
+    <string name="menu_title_default">菜 单</string>
+    <string name="menu_title_page_jump">进度跳转</string>
+    <string name="menu_title_page_seach">全文查找</string>
+    <string name="menu_title_roll_speed">滚动速度</string>
+    
+    <string name="bookmark_title">书签管理</string>
+    <string name="bookmark_back">返回</string>
+    <string name="bookmark_menu">菜单</string>
+    <string name="bookmark_error">书签载入失败</string>
+    <string name="bookmark_add_sucess">添加书签成功</string>
+    <string name="bookmark_add_error">添加书签失败！</string>
+    
+    <string name="page_auto_roll_star">开始自动翻页</string>
+    <string name="page_auto_roll_stop">停止自动翻页</string>
+    
+    <string name="alert_title">提示</string>
+    <string name="alert_sure">确定</string>
+    <string name="alert_cancel">取消</string>
+    
+    <string name="progress_dialog_title">提示</string>
+    <string name="progress_dialog_cancel">取消</string>
+    
+</resources>

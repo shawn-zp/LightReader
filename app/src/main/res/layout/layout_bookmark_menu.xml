@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    >
+    <LinearLayout android:id="@+id/menu_frame"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_centerInParent="true"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/menu_bg"
+	    >
+        <ImageButton android:id="@+id/bookmark_delete"
+            style="@style/menu_button"
+            android:src="@drawable/bookmark_delete"
+            />
+        <ImageButton android:id="@+id/bookmark_delete_all"
+            style="@style/menu_button"
+            android:src="@drawable/bookmark_delete_all"
+            />
+    </LinearLayout>
+    
+    <TextView 
+        style="@style/menu_title"
+	    android:layout_alignTop="@+id/menu_frame"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/menu_title_default"
+	    />
+</RelativeLayout>

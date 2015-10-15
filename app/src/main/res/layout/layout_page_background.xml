@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    >
+    
+    <LinearLayout android:id="@+id/page_bg_color"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    android:background="@drawable/menu_bg_body"
+	    android:visibility="invisible"
+	    >
+    </LinearLayout>
+    
+    <ScrollView android:id="@+id/page_bg_image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/page_bg_color"
+	    android:layout_alignRight="@+id/page_bg_color"
+	    android:layout_alignTop="@+id/page_bg_color"
+	    android:layout_alignBottom="@+id/page_bg_color"
+	    android:background="@drawable/menu_bg_body"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+		>
+        <TableLayout android:id="@+id/page_bg_image_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			>
+			<TableRow >
+			    <ImageButton android:id="@+id/page_bg_1"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_1_p"
+			        />
+			    <ImageButton android:id="@+id/page_bg_2"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_2_p"
+			        />
+			    <ImageButton android:id="@+id/page_bg_3"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_3_p"
+			        />
+			</TableRow>
+			<TableRow >
+			    <ImageButton android:id="@+id/page_bg_4"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_4_p"
+			        />
+			    <ImageButton android:id="@+id/page_bg_5"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_5_p"
+			        />
+			    <ImageButton android:id="@+id/page_bg_6"
+					style="@style/bg_button"
+			        android:background="@drawable/page_bg_6_p"
+			        />
+			</TableRow>
+        </TableLayout>
+    </ScrollView>
+    
+    <ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/page_bg_color" 
+	    android:layout_above="@+id/page_bg_color"
+	    android:background="@drawable/menu_bg_title"
+	    />
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignLeft="@+id/page_bg_color"
+	    android:layout_above="@+id/page_bg_color"
+	    >
+        <Button android:id="@+id/page_bg_image_option"
+            style="@style/menu_option"
+            android:text="@string/page_menu_bg_image"
+            />
+        <Button android:id="@+id/page_bg_color_option"
+            style="@style/menu_option_false"
+            android:text="@string/page_menu_bg_color"
+            />
+    </LinearLayout>
+</RelativeLayout>

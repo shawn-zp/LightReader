@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    >
+    <LinearLayout android:id="@+id/page_font_setting"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    android:background="@drawable/menu_bg_body"
+	    >
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:gravity="center_vertical"
+    		android:layout_marginTop="10dp"
+    		>
+    		<TextView
+	       		style="@style/menu_text"
+	       		android:text="@string/page_menu_fontsize"
+	       		android:layout_marginRight="20dp"
+	       		 />
+		    <SeekBar
+		        android:id="@+id/page_font"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content"
+		        android:max="30" />
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:gravity="center_vertical"
+    		android:layout_marginTop="10dp"
+    		>
+    		<TextView
+	       		style="@style/menu_text"
+	       		android:text="@string/page_menu_linesize"
+	       		android:layout_marginRight="20dp"
+	       		 />
+		    <SeekBar
+		        android:id="@+id/page_linesize"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content"
+		        android:max="20" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/page_font_color"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    android:background="@drawable/menu_bg_body"
+	    android:visibility="invisible"
+	    >
+    </LinearLayout>
+    
+    <ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/page_font_setting" 
+	    android:layout_above="@+id/page_font_setting"
+	    android:background="@drawable/menu_bg_title"
+	    />
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignLeft="@+id/page_font_setting"
+	    android:layout_above="@+id/page_font_setting"
+	    >
+        <Button android:id="@+id/page_font_setting_option"
+            style="@style/menu_option"
+            android:text="@string/page_menu_font_setting"
+            />
+        <Button android:id="@+id/page_font_color_option"
+            style="@style/menu_option_false"
+            android:text="@string/page_menu_font_color"
+            />
+    </LinearLayout>
+</RelativeLayout>

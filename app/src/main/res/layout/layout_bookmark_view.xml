@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    >
+	<LinearLayout 
+	    android:layout_width="95dp"
+	    android:layout_height="135dp"
+	    android:orientation="vertical"
+	    android:background="@drawable/bookmark_bg"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="20dp"
+	    android:paddingRight="10dp"
+	    android:paddingBottom="10dp"
+	    >
+		<TextView android:id="@+id/bookmark_preview" 
+		    style="@style/bookmark_preview"
+			/>
+		<TextView android:id="@+id/bookmark_location" 
+			style="@style/bookmark_location"
+			/>
+	</LinearLayout>
+</LinearLayout>
